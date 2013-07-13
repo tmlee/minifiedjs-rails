@@ -1,6 +1,7 @@
 # minifiedjs-rails
 
 MinifiedJS (http://minifiedjs.com/), A Truly Lightweight JavaScript Library for Rails via Assets Pipeline
+The Javascript library that replaces jQuery or MooTools with a <4kB Library.
 
 ## Installation with Rails 3.1+
 
