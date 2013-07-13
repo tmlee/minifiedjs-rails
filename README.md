@@ -1,24 +1,38 @@
-# Minifiedjs::Rails
+# minifiedjs-rails
 
-TODO: Write a gem description
+MinifiedJS (http://minifiedjs.com/), A Truly Lightweight JavaScript Library for Rails via Assets Pipeline
 
-## Installation
+## Installation with Rails 3.1+
 
-Add this line to your application's Gemfile:
+Add this to your `Gemfile` as part of the `assets` group:
 
-    gem 'minifiedjs-rails'
+	group :assets do
+    	gem 'minifiedjs-rails'
+   	end
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
+Require `minified_web` in your JavaScript manifest, for example in `application.js` if you are using Rails 3.1+:
 
-    $ gem install minifiedjs-rails
+	//= require minified_web
+
+Your other options include a minified version and also with IE6-8 support removed (more information at http://minifiedjs.com/download/). You should only pick one of the following to be included in your app.
+
+	//= require minified_web
+	//= require minified_web.min
+	//= require minified_web_noie
+	//= require minified_web_noie.min
 
 ## Usage
 
-TODO: Write usage instructions here
+Quick start guide can be found at http://minifiedjs.com/docs/quickstart.html
+
+For more documentations, visit http://minifiedjs.com/docs/
+
+For the complete API, check out http://minifiedjs.com/api/
+
 
 ## Contributing
 
