@@ -8,16 +8,15 @@ Gem::Specification.new do |spec|
   spec.version       = Minifiedjs::Rails::VERSION
   spec.authors       = ["TM Lee"]
   spec.email         = ["tm89lee@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Compiles minified.js lightweight Javascript library with Rails asset pipeline}
+  spec.summary       = %q{Compiles minified.js lightweight Javascript library with Rails asset pipeline}
   spec.homepage      = ""
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files`.split($/)
-  spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
-  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
+  spec.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.txt", "README.md"]
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "railties", ">= 3.1"
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"
 end

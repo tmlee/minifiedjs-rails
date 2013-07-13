@@ -2,6 +2,7 @@ require "minifiedjs/rails/version"
 
 module Minifiedjs
   module Rails
-    # Your code goes here...
+    class Engine < ::Rails::Engine
+    end
   end
 end
